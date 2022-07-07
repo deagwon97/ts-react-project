@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  rbac-admin:
+    container_name: rbac-admin
+    build:
+      context: ../
+      dockerfile: ./Dockerfile
+      target: builder
+    volumes:
+      - ../:/workdir
+    stdin_open: true
+    tty: true
+    entrypoint: /bin/sh

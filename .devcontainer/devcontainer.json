@@ -1,0 +1,32 @@
+{
+    "name": "react-ts-project",
+    "dockerComposeFile": [
+        "./docker-compose.yml"
+    ],
+    "service": "react-ts-project",
+    "shutdownAction": "stopCompose",
+    "extensions": [
+        "dbaeumer.vscode-eslint",
+        "esbenp.prettier-vscode"
+    ],
+    "settings": {
+        "editor.codeActionsOnSave": {
+            "source.fixAll.eslint": true
+        },
+        "window.zoomLevel": -1,
+        "editor.formatOnSave": true,
+        "[javascript]": {
+            "editor.defaultFormatter": "esbenp.prettier-vscode"
+        },
+        "[javascriptreact]": {
+            "editor.defaultFormatter": "esbenp.prettier-vscode"
+        },
+        "[typescript]": {
+            "editor.defaultFormatter": "esbenp.prettier-vscode"
+        },
+        "[typescriptreact]": {
+            "editor.defaultFormatter": "esbenp.prettier-vscode"
+        }
+    },
+    "workspaceFolder": "/workdir"
+}
