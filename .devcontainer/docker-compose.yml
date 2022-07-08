@@ -1,8 +1,8 @@
 version: '3.8'
 
 services:
-  rbac-admin:
-    container_name: rbac-admin
+  react-ts-project:
+    container_name: react-ts-project
     build:
       context: ../
       dockerfile: ./Dockerfile
